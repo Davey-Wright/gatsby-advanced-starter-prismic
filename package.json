@@ -61,6 +61,7 @@
   "main": "n/a",
   "scripts": {
     "develop": "GATSBY_GRAPHQL_IDE=playground gatsby develop",
+    "start": "npm run develop",
     "dev": "npm run develop",
     "serve": "gatsby serve",
     "build": "gatsby build",
