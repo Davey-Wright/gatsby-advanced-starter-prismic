@@ -1,6 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
-import config from "../../SiteConfig";
+import config from "../../site-config";
 import "./index.css";
 
 export default class MainLayout extends React.Component {

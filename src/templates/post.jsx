@@ -4,7 +4,7 @@ import { graphql } from "gatsby";
 import Layout from "../layout";
 import PostTags from "../components/PostTags/PostTags";
 import SEO from "../components/SEO/SEO";
-import config from "../../SiteConfig";
+import config from "../../site-config";
 import "./b16-tomorrow-dark.css";
 import "./post.css";
 

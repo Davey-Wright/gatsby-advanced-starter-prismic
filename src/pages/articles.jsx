@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Helmet from "react-helmet";
 import Layout from "../layout";
-import config from "../../SiteConfig";
+import config from "../../site-config";
 
 export default () => (
   <Layout>

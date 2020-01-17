@@ -76,7 +76,7 @@ If you are interested in a foundation for building ultra-fast websites, you can 
   - Embed YouTube videos
   - Embed Tweets
 - Pagination
-  - Configurable via `SiteConfig.js`
+  - Configurable via `site-config.js`
 - Tags
   - Separate page for posts under each tag
 - Categories
@@ -140,7 +140,7 @@ npm run develop # or gatsby develop
 
 ## Configuration
 
-Edit the export object in `./SiteConfig`:
+Edit the export object in `./site-config`:
 
 ```js
 module.exports = {
