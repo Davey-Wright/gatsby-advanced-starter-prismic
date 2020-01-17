@@ -87,7 +87,6 @@ If you are interested in a foundation for building ultra-fast websites, you can 
   - User social profiles
   - Copyright information
   - More!
-- [NetlifyCMS](https://www.netlifycms.org) support out of the box
 - PWA features
   - Offline support
   - Web App Manifest support
@@ -165,7 +164,7 @@ module.exports = {
   userAvatar: "https://api.adorable.io/avatars/150/test.png", // User avatar to display in the author segment.
   userDescription:
     "Yeah, I like animals better than people sometimes... Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year. And the good thing about dogs... is they got different dogs for different people.", // User description to display in the author segment.
-    
+
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {
