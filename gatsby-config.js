@@ -72,6 +72,22 @@ module.exports = {
     "gatsby-plugin-twitter",
     "gatsby-plugin-sitemap",
     {
+      resolve: `gatsby-source-prismic-graphql`,
+      options: {
+        repositoryName: 'the-pursuit-collective',
+        pages: [{
+          type: 'Article',          // Custom type of the document
+          match: '/article/:uid',   // Pages will be generated in this pattern
+          path: '/article-preview', // Placeholder route for previews
+          component: require.resolve('./src/layouts/Article/Article.js') // Template file
+        }],
+        sharpKeys: [
+          /image|photo|picture/, // (default)
+          'profilepic',
+        ],
+      }
+    },
+    {
       resolve: "gatsby-plugin-manifest",
       options: {
         name: config.siteTitle,
