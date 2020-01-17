@@ -62,8 +62,7 @@ export default ({ data }) => {
         </main>
 
         <footer>
-          { prevArticle ? <PreviousArticleLink doc={ prevArticle } /> : '' }
-          { nextArticle ? <NextArticleLink doc={ nextArticle } /> : '' }
+
         </footer>
     </>
   )
@@ -93,10 +92,6 @@ const NextArticleLink = ({ doc }) => (
 export const query = graphql`
   query ArticleQuery(
     $uid: String
-    $paginationPreviousUid: String!
-    $paginationPreviousLang: String!
-    $paginationNextUid: String!
-    $paginationNextLang: String!
   ) {
     prismic {
       allArticles(uid: $uid) {
@@ -161,22 +156,6 @@ export const query = graphql`
               }
             }
           }
-        }
-      }
-      prevArticle: article(uid: $paginationPreviousUid, lang: $paginationPreviousLang) {
-        title
-        _meta {
-          uid
-          lang
-          type
-        }
-      }
-      nextArticle: article(uid: $paginationNextUid, lang: $paginationNextLang) {
-        title
-        _meta {
-          uid
-          lang
-          type
         }
       }
     }
